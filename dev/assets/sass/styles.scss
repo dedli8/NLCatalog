@@ -1,0 +1,21 @@
+@import 'settings';
+@import 'mixins';
+.nl-catalog{
+  @import 'reset';
+  font-family: $ubuntu;
+  font-weight: 300;
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    font-size: 0;
+    padding: 0 20px;
+    @include media($width-max){
+      padding: 0;
+    }
+  }
+  @import "../../components/breadcrumbs/_breadcrumbs.scss";
+  @import "../../components/catalogdeep2/_catalogdeep2.scss";
+  @import "../../components/catalogdeep2/filter/_filter";
+  @import "../../components/catalogdeep2/goods/_goods";
+
+}

@@ -1,0 +1,136 @@
+.catalog-deep2-filter{
+  width: 197px;
+  .item>div:first-child{
+    background-color: #e8e9e9;
+    font-size: 14px;
+    font-weight: 500;
+    color: #8d8f91;
+    padding: 6px 0 6px 10px;
+  }
+  .inner-list{
+    font-weight: 300;
+    font-size: 13px;
+color: #8d8f91;
+    padding: 10px 0 10px 10px;
+    .list-item{
+      margin-bottom: 14px;
+      cursor: pointer;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      &:hover{
+        color: #2fbb7b;
+      }
+    }
+  }
+  .range-slider-box{
+    padding: 10px 0 10px 10px;
+    margin-bottom: 10px;
+    color: #8d8f91;
+    font-size: 12px;
+    span{
+      margin-right: 3px;
+    }
+  }
+  .range-slider-title{
+    margin-bottom: 7px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .range-price{
+    width: 70px;
+    height: 20px;
+    border: 1px solid #ddddde;
+    font-size: 12px;
+    color: #8d8f91;
+    font-weight: 300;
+    box-sizing: border-box;
+    padding-left: 6px;
+  }
+  #amount1{
+    margin-right: 5px;
+  }
+  .ui-state-default{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #8d8f91;
+    &:focus{
+    outline: none;
+  }
+  }
+  .ui-slider-range{
+    height: 1px;
+    background-color: #8d8f91;
+  }
+  .ui-widget-content{
+    border: none;
+    height: 1px;
+    background-color: #cfd0d1;
+    margin-bottom: 10px;
+  }
+  .ui-slider-handle{
+    top: -.25em;
+    margin: 0;
+  }
+  .brand-checkbox{
+    padding: 15px 0 0 10px;
+    /* The container */
+    .container {
+      display: block;
+      position: relative;
+      padding-left: 37px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 14px;
+      color: #8d8f91;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    /* Hide the browser's default checkbox */
+    .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 17px;
+      width: 17px;
+      box-sizing: border-box;
+      border: 1px solid #ddddde;
+    }
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .container input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .container .checkmark:after {
+      left: 4px;
+      top: 1px;
+      width: 5px;
+      height: 10px;
+      border: solid #8d8f91;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+}
