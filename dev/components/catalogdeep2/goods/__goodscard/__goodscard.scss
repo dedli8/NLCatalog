@@ -1,0 +1,233 @@
+.goods-card {
+  width: 230px;
+  padding: 16px 16px 9px 13px;
+  border: 1px solid #eeeeef;
+  color: #909294;
+  position: relative;
+  //margin-right: 25px;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 13px;
+  box-sizing: border-box;
+  &:nth-child(odd) .new{
+    display: none;
+  }
+  &:nth-child(odd) .reg-price{
+    display: none;
+  }
+  &:nth-child(even) .price-btn-wrap .btn-buy{
+    margin-bottom: 0;
+  }
+  &:nth-child(even) .price-btn-wrap{
+    align-items: center;
+  }
+  &:nth-child(even) .sale{
+    display: none;
+  }
+  &:nth-child(even) .percent{
+    display: none;
+  }
+  &:nth-child(even) .old-price{
+    display: none;
+  }
+  &:nth-child(even) .current-price{
+    display: none;
+  }
+
+  &:hover .description{
+    display: block;
+  }
+  &:hover{
+   border-color: white;
+  }
+  &:nth-child(3n+4){
+    margin-right: 0;
+  }
+  .sale {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 42px;
+    height: 13px;
+    background-color: #ff2916;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 13px;
+  }
+  .new{
+    position: absolute;
+    right: 6px;
+    top: 15px;
+    width: 47px;
+    height: 47px;
+    background-color: #eaf8f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-transform: uppercase;
+    .inner {
+      background-color: #2fbb7b;
+      width: 36px;
+      height: 36px;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 37px;
+      font-weight: 500;
+      font-size: 10px;
+    }
+  }
+  .percent {
+    position: absolute;
+    right: 6px;
+    top: 15px;
+    width: 47px;
+    height: 47px;
+    background-color: #ffe9e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    .inner {
+      background-color: #ff2916;
+      width: 36px;
+      height: 36px;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 37px;
+      font-weight: 500;
+      font-size: 23px;
+    }
+  }
+  .picture-box {
+    text-align: center;
+  }
+  .picture {
+    height: 205px;
+    width: auto;
+    max-width: 210px;
+  }
+  .name {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .articles-icons-wrap {
+    margin-bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .article-stars-box {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    margin-bottom: 11px;
+  }
+  .article {
+    font-size: 10px;
+  }
+  .stars-box {
+    display: inline-block;
+  }
+  .star-icon-fill, .star-icon-empty {
+    width: 13px;
+    height: 12px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2px;
+  }
+  .star-icon-fill {
+    background-image: url("img/stariconfill.png");
+  }
+  .star-icon-empty {
+    background-image: url("img/stariconempty.png");
+  }
+  .feedback {
+    font-size: 10px;
+    border-bottom: 2px solid #d9dadb;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .icon-box {
+    display: inline-block;
+    vertical-align: middle;
+    .delivery-icon, .parcel-icon {
+      display: inline-block;
+      vertical-align: middle;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .delivery-icon {
+      width: 24px;
+      height: 17px;
+      margin-right: 8px;
+      background-image: url("img/deliveryicon.png");
+    }
+    .parcel-icon {
+      width: 19px;
+      height: 21px;
+      background-image: url("img/parcelicon.png");
+    }
+  }
+  .price-btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .price-wrap{
+      display: inline-block;
+      vertical-align: bottom;
+    }
+    .reg-price{
+      font-size: 16px;
+      font-weight: 500;
+      color: #8d8f91;
+    }
+    .old-price {
+      color: #8d8f91;
+      font-weight: 400;
+      font-size: 14px;
+      text-decoration: line-through;
+      padding-left: 8px;
+    }
+    .current-price {
+      color: #ff2916;
+      font-weight: 500;
+      font-size: 16px;
+    }
+    .btn-buy{
+      width: 76px;
+      height: 21px;
+      cursor: pointer;
+      color: white;
+      font-size: 14px;
+      background-color: $green;
+      border-radius: 3px;
+      margin-bottom: 5px;
+    }
+  }
+  .description{
+    position: absolute;
+    bottom: -47px;
+    left: -1px;
+    border: 1px solid white;
+    z-index: 1;
+    display: none;
+    font-size: 10px;
+    color: #8d8f91;
+    background-color: white;
+    width: 100%;
+    padding-bottom: 5px;
+    .params{
+      padding-left: 13px;
+    }
+  }
+}

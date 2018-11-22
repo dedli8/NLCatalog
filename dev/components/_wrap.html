@@ -10,36 +10,30 @@
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
             integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="
             crossorigin="anonymous"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script>
-        $( function() {
-            $( "#slider-range" ).slider({
-                range: true,
-                min: 510,
-                max: 17000,
-                values: [ 0, 11000 ],
-                slide: function( event, ui ) {
-                    $( "#amount1" ).val( ui.values[ 0 ]);
-                    $( "#amount2" ).val( ui.values[ 1 ]);
-                }
-            });
-            $( "#amount1" ).val( $( "#slider-range" ).slider( "values", 0 ));
-            $( "#amount2" ).val ($( "#slider-range" ).slider( "values", 1 ));
-        } );
+
     </script>
 </head>
 <body>
 <div class="nl-catalog">
+    <div class="container">
         <!--#middle-->
+</div>
 </div>
 <script src="js/main.js"></script>
 <script>
 $(function () {
-    const siteWidth = 1080;
+    const siteWidth = 1280;
     const scale = screen.width / siteWidth;
     document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=' + siteWidth + ', initial-scale=' + scale + '');
+        $('select').niceSelect();
+        $('select').change(function (e) {
+            console.log($('select option:selected').val());
+        })
 });
 </script>
 </body>

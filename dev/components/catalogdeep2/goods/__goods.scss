@@ -1,0 +1,55 @@
+.goods{
+  display: inline-block;
+  vertical-align: top;
+  width: 996px;
+  .box{
+    padding: 4px 0 40px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .sort-look{
+    height: 23px;
+    font-size: 14px;
+    color: #8d8f91;
+    background-color: #e8e9e9;
+    padding: 0 15px 0 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .sort{
+      align-self: baseline;
+    }
+    .text{
+      font-weight: 500;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .sort-select{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .look {
+      .list-icon, .tile-icon {
+        background-size: 14px 14px;
+        background: no-repeat center;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .active{
+        background-color: white;
+      }
+      .list-icon {
+        background-image: url("img/listicon.png");
+        margin-left: 2px;
+      }
+      .tile-icon {
+        background-image: url("img/tileicon.png");
+        margin-left: 5px;
+      }
+    }
+  }
+}

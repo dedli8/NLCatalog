@@ -2,20 +2,22 @@
 @import 'mixins';
 .nl-catalog{
   @import 'reset';
+  @import 'nice-select';
   font-family: $ubuntu;
   font-weight: 300;
+  font-size: 0;
   .container {
-    max-width: 1280px;
+    max-width: 1211px;
     margin: 0 auto;
     font-size: 0;
-    padding: 0 20px;
+    box-sizing: border-box;
     @include media($width-max){
-      padding: 0;
     }
   }
   @import "../../components/breadcrumbs/_breadcrumbs.scss";
   @import "../../components/catalogdeep2/_catalogdeep2.scss";
-  @import "../../components/catalogdeep2/filter/_filter";
-  @import "../../components/catalogdeep2/goods/_goods";
+  @import "../../components/catalogdeep2/filter/_filter.scss";
+  @import "../../components/catalogdeep2/goods/_goods.scss";
+  @import "../../components/catalogdeep2/goods/__goodscard/__goodscard.scss";
 
 }

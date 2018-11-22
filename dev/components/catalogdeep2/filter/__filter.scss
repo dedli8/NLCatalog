@@ -1,11 +1,16 @@
 .catalog-deep2-filter{
   width: 197px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 17px;
   .item>div:first-child{
     background-color: #e8e9e9;
     font-size: 14px;
     font-weight: 500;
     color: #8d8f91;
-    padding: 6px 0 6px 10px;
+    height: 23px;
+    padding-left: 10px;
+    line-height: 20px;
   }
   .inner-list{
     font-weight: 300;
@@ -13,7 +18,7 @@
 color: #8d8f91;
     padding: 10px 0 10px 10px;
     .list-item{
-      margin-bottom: 14px;
+      margin-bottom: 12px;
       cursor: pointer;
       &:last-child{
         margin-bottom: 0;
@@ -24,8 +29,7 @@ color: #8d8f91;
     }
   }
   .range-slider-box{
-    padding: 10px 0 10px 10px;
-    margin-bottom: 10px;
+    padding: 10px 0 8px 10px;
     color: #8d8f91;
     font-size: 12px;
     span{
@@ -55,6 +59,7 @@ color: #8d8f91;
     height: 7px;
     border-radius: 50%;
     background-color: #8d8f91;
+    border: 0;
     &:focus{
     outline: none;
   }
@@ -67,10 +72,10 @@ color: #8d8f91;
     border: none;
     height: 1px;
     background-color: #cfd0d1;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .ui-slider-handle{
-    top: -.25em;
+    top: -3px;
     margin: 0;
   }
   .brand-checkbox{
@@ -80,7 +85,7 @@ color: #8d8f91;
       display: block;
       position: relative;
       padding-left: 37px;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
       cursor: pointer;
       font-size: 14px;
       color: #8d8f91;
